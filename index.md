@@ -1,12 +1,12 @@
 # Decision Authority Layer (DAL)
 
-DAL is an open specification for defining, assigning, and auditing
-decision authority in AI-assisted systems.
+DAL is an open specification that defines how decision authority is
+declared, constrained, and audited in AI-assisted systems.
 
-DAL does not define decision quality, ethics, or alignment.
-It defines who is authorized to decide what, under which conditions,
-with what escalation paths, and with what accountability.
+DAL is concerned with authority and accountability, not decision quality,
+ethics, or model alignment.
 
-## Links
-- [Read the DAL v0.1 Specification](./spec/README.md)
-- [View the GitHub Repository](https://github.com/blockchaination/decision-authority-layer)
+## Resources
+- [Specification (v0.1)](./spec/README.md)
+- [Discussions](https://github.com/blockchaination/decision-authority-layer/discussions)
+- [Issues](https://github.com/blockchaination/decision-authority-layer/issues)
