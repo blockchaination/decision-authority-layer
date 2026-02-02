@@ -41,7 +41,19 @@ DAL does not define how decisions should be made. It does not prescribe decision
 DAL does not provide enforcement, automation, or execution mechanisms. It specifies what should be declared, not how declarations are enforced or decisions are executed. Implementation of enforcement is left to adopters.
 
 ## Core Concepts
-(Defined below)
+
+### Decision Unit
+
+The Decision Unit is the fundamental atomic element of the Decision Authority Layer. It is defined as the smallest indivisible action within a system that produces a state change or an external effect.
+
+A Decision Unit is the specific locus where authority is exercised. It is the entity to which authority is assigned and against which accountability is audited.
+
+A Decision Unit MUST satisfy the following properties:
+
+1.  **Atomicity**: It cannot be subdivided into smaller decision components.
+2.  **Effect**: Its execution results in a modification of system state or real-world state.
+3.  **Identifiability**: It must be uniquely addressable and distinguishable from other units.
+4.  **Accountability**: It serves as the anchor point for authority assignment and audit records.
 
 ## Normative Rules
 (Uses MUST / SHOULD / MAY language)
