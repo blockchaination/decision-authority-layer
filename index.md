@@ -9,4 +9,4 @@ with what escalation paths, and with what accountability.
 
 ## Links
 - [Read the DAL v0.1 Specification](./spec/README.md)
-- [View the GitHub Repository](https://github.com/<blockchaination>/decision-authority-layer)
+- [View the GitHub Repository](https://github.com/blockchaination/decision-authority-layer)
