@@ -25,12 +25,20 @@ The gap is structural. Authority must be declared before decisions are made, con
 DAL addresses this gap by formalizing decision authority as a distinct layer in system design.
 
 ## Non-Goals
-DAL does not:
-- Determine decision quality
-- Encode moral or ethical values
-- Replace human judgment
-- Perform AI alignment or training
-- Guarantee safe or optimal outcomes
+
+DAL does not evaluate decision quality or correctness. It does not assess whether a decision is right, wrong, optimal, or suboptimal. Quality evaluation is outside the scope of this specification.
+
+DAL does not encode ethical, moral, or normative judgments. It provides no framework for determining what should be decided, only who is authorized to decide. Value systems, ethical principles, and normative constraints are not addressed.
+
+DAL does not perform model alignment, training, or inference. It does not modify, configure, or control how models generate outputs. Model behavior is not within scope.
+
+DAL does not replace or override human responsibility. Declaration of authority does not absolve individuals or organizations of accountability for outcomes. Legal, professional, and organizational responsibilities remain unchanged.
+
+DAL does not guarantee safety, compliance, or optimal outcomes. Proper use of DAL does not ensure that decisions will be safe, compliant with regulations, or effective. Separate verification mechanisms are required for these properties.
+
+DAL does not define how decisions should be made. It does not prescribe decision-making processes, methodologies, or criteria. Process design remains the responsibility of implementers.
+
+DAL does not provide enforcement, automation, or execution mechanisms. It specifies what should be declared, not how declarations are enforced or decisions are executed. Implementation of enforcement is left to adopters.
 
 ## Core Concepts
 (Defined below)
