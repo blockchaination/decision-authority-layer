@@ -11,10 +11,18 @@ DAL operates at the governance layer. It addresses the structural question of wh
 This specification is intended for systems where decision authority must be auditable, including regulated environments, multi-agent systems, and human-AI collaborative workflows.
 
 ## Motivation
-As AI systems increasingly influence real-world outcomes, responsibility for
-decisions becomes diffuse and ambiguous. DAL addresses this gap by formalizing
-who is permitted to decide what, under which conditions, and with what escalation
-mechanisms.
+
+When automated systems participate in decision-making processes, the question of who holds authority to act becomes critical for accountability. In traditional systems, authority is inherent in organizational structure or explicitly delegated through documented procedures. When automation is introduced, this clarity often erodes.
+
+Systems that incorporate automated decision-making frequently exhibit implicit authority structures. A function executes, a threshold is crossed, a recommendation is accepted, and an action occurs. The chain of authorization is present in code, configuration, or workflow logic, but it is not declared in a form that supports inspection, constraint, or audit. Responsibility for outcomes becomes diffuse because the locus of authority is not explicit.
+
+Existing approaches address related but distinct problems. Model alignment focuses on ensuring that systems behave according to intended objectives. This addresses what a system does, not who authorized it to act. Explainability techniques provide reasoning for how a decision was reached. This clarifies mechanism, not authority. Logging records actions after they occur. Post-hoc review analyzes decisions retrospectively. Neither establishes authority prospectively or prevents unauthorized actions.
+
+None of these methods answer the foundational question: was this agent authorized to make this decision under these conditions? Without explicit authority declarations, accountability structures rely on inference, reconstruction, or custom implementations that vary across systems. Auditors, regulators, and operators cannot determine whether decisions were made within authorized scope without reverse-engineering system internals.
+
+The gap is structural. Authority must be declared before decisions are made, constrained by conditions that limit scope, and subject to verification that actions fall within authorized boundaries. This requires a formal mechanism independent of implementation details. Such a mechanism must support explicit declaration of which agents hold authority, under what conditions authority applies, and how authority can be escalated or revoked.
+
+DAL addresses this gap by formalizing decision authority as a distinct layer in system design.
 
 ## Non-Goals
 DAL does not:
