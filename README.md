@@ -35,9 +35,9 @@ DAL v0.1 is the current published specification. This version is frozen and stab
 
 The authoritative version of the DAL specification is published at:
 
-https://blockchaination.github.io/decision-authority-layer/
+https://blockchaination.github.io/decision-authority-layer/spec/
 
-Mirrors, forks, or reproductions hosted elsewhere are non-authoritative. In case of discrepancy, the GitHub Pages publication governs.
+Forks, mirrors, or copies hosted elsewhere are non-authoritative. References should cite the canonical specification URL.
 
 ## Participate
 
