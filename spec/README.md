@@ -134,7 +134,19 @@ Statements containing these terms define conditions that a conforming system is 
 Text that does not contain normative keywords is non-normative. Non-normative text provides context, explanation, or rationale. It does not establish requirements and does not affect conformance assessment.
 
 ## Minimal Compliance
-(What an implementation must declare)
+
+Minimal Compliance defines the minimum declarations an implementation must expose to support DAL conformance. It establishes what must be declared, not how declarations are stored, transmitted, or enforced.
+
+A minimally compliant implementation MUST declare the following:
+
+1.  **Decision Units**: The set of Decision Units within the system must be enumerated and identifiable.
+2.  **Authority Holders**: The Authority Holder or Holders assigned to each Decision Unit must be declared.
+3.  **Authority Scope**: The Authority Scope applicable to each Authority Holder must be declared.
+4.  **Escalation Paths**: Any Escalation Paths associated with each Decision Unit must be declared where authority transfer is permitted.
+
+These declarations MUST be accessible for inspection. Inspection means that an authorized party can retrieve and examine the declarations without requiring access to implementation internals.
+
+Minimal Compliance does not require enforcement mechanisms, runtime automation, or active prevention of unauthorized decisions. These capabilities may be implemented but are not required for conformance.
 
 ## Failure Modes & Misuse
 (How DAL can be misapplied)
