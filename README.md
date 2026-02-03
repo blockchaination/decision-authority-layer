@@ -27,7 +27,7 @@ DAL is a governance framework, not a quality assurance or alignment mechanism.
 
 ## Specification
 
-The current specification is version 0.1 and is under active development.
+DAL v0.1 is the current published specification. This version is frozen and stable for reference. Development activity applies to future versions only.
 
 - [Specification (v0.1)](./spec/)
 
