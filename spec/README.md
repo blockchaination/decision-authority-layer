@@ -149,10 +149,107 @@ These declarations MUST be accessible for inspection. Inspection means that an a
 Minimal Compliance does not require enforcement mechanisms, runtime automation, or active prevention of unauthorized decisions. These capabilities may be implemented but are not required for conformance.
 
 ## Failure Modes & Misuse
-(How DAL can be misapplied)
+
+DAL is a structural specification for declaring decision authority. It is not a complete governance system. Misunderstanding its scope or capabilities can lead to ineffective or harmful implementations.
+
+### Declaration Without Enforcement
+
+DAL requires that authority be declared. It does not require that declarations be enforced. A system may declare Authority Scope for all Decision Units and still permit unauthorized decisions to execute. Declaration alone provides auditability, not prevention. Implementers who assume that DAL declarations automatically prevent unauthorized actions have misunderstood the specification.
+
+Enforcement mechanisms are outside the scope of DAL. Systems that require active prevention of unauthorized decisions must implement enforcement separately.
+
+### Substitution for Decision Quality
+
+DAL declares who is authorized to decide. It does not evaluate whether decisions are correct, optimal, or appropriate. Implementers who treat DAL conformance as validation of decision quality have misapplied the specification.
+
+A system may be fully DAL-conformant and still produce harmful, incorrect, or suboptimal outcomes. DAL addresses authority, not correctness.
+
+### Displacement of Human Accountability
+
+DAL formalizes authority declarations. It does not transfer or reduce human responsibility for outcomes. Implementers who treat DAL as a mechanism for absolving individuals or organizations of accountability have misunderstood its purpose.
+
+Declaration of authority does not constitute delegation of responsibility. Legal, professional, and organizational accountability structures remain in effect regardless of DAL conformance.
+
+### Completeness Illusion
+
+DAL specifies minimum requirements for authority declaration. Conformance does not guarantee that all relevant authority has been declared, that scope constraints are sufficient, or that escalation paths are comprehensive. Implementers who assume that DAL conformance ensures complete governance have overestimated the specification's scope.
+
+DAL establishes a baseline for explicitness. It does not ensure that declarations are thorough, well-designed, or adequate for a given context.
+
+### Ethical or Normative Substitution
+
+DAL provides no framework for determining what should be decided or how decisions should align with values, ethics, or principles. Implementers who treat DAL as a substitute for ethical governance, value alignment, or normative constraint systems have misapplied the specification.
+
+DAL is value-neutral by design. Ethical and normative considerations must be addressed through separate mechanisms.
 
 ## Open Questions
-(Explicitly unresolved areas)
+
+This section identifies design areas that remain unresolved in v0.1. These are not implementation details left to adopters. They are structural questions that require specification-level resolution in future versions.
+
+### Cross-System Authority Composition
+
+When Decision Units span multiple systems, it is unclear how Authority Scope declarations should compose. If System A declares authority over a Decision Unit and System B also declares authority over the same unit, DAL v0.1 provides no mechanism for resolving conflicts, establishing precedence, or validating consistency.
+
+This specification does not address federated or distributed authority models.
+
+### Authority Scope Modification
+
+DAL requires that Authority Scope be declared. It does not specify whether scope can be modified after initial declaration, under what conditions modification is valid, or how modifications affect in-flight decisions.
+
+Dynamic scope adjustment may be necessary in adaptive systems, but the semantics of scope modification are not defined.
+
+### Temporal Constraints on Authority
+
+Authority may be time-bounded in practice. DAL does not provide a normative structure for expressing temporal constraints on Authority Scope, such as expiration, scheduled activation, or time-limited delegation.
+
+Whether temporal constraints should be specified within Authority Scope or as a separate construct is unresolved.
+
+### Authority Revocation Semantics
+
+DAL permits Authority Holders to be assigned to Decision Units. It does not define how authority is revoked, whether revocation is retroactive, or how revocation affects decisions made under previously valid authority.
+
+Revocation semantics are undefined.
+
+### Conflict Resolution Between Authority Holders
+
+When multiple Authority Holders are assigned to a Decision Unit, DAL does not specify how conflicts are resolved if scope constraints permit multiple valid decisions. Whether conflicts should be resolved through precedence, consensus, or escalation is unresolved.
+
+### Granularity Boundaries for Decision Units
+
+DAL defines Decision Units as atomic and indivisible. It does not provide criteria for determining appropriate granularity. Whether a sequence of actions constitutes one Decision Unit or multiple units is left to implementers, which may result in inconsistent decomposition across systems.
+
+### Accountability Record Retention and Access
+
+DAL requires Accountability Records to be durable and inspectable. It does not specify retention duration, access control policies, or deletion conditions. Long-term record management is outside the scope of v0.1.
 
 ## Versioning
-(How the standard evolves)
+
+### Version Numbering
+
+This specification uses semantic versioning. Version numbers are structured as MAJOR.MINOR. Changes to MAJOR indicate backwards-incompatible modifications to conformance requirements. Changes to MINOR indicate backwards-compatible additions or clarifications.
+
+This document specifies DAL v0.1. The 0.x series indicates that the specification is under active development and has not achieved stability. Breaking changes may occur between 0.x versions without incrementing MAJOR.
+
+### Stability Guarantee
+
+DAL v0.x provides no stability guarantee. Conformance requirements, core concepts, and normative rules may change in incompatible ways between minor versions. Implementations that conform to v0.1 may not conform to v0.2.
+
+DAL v1.0 will mark the first stable release. After v1.0, MAJOR version increments will indicate breaking changes. MINOR version increments will indicate backwards-compatible changes.
+
+### Deprecation Policy
+
+DAL v0.x does not support deprecation. Features or requirements may be removed without prior notice. After v1.0, deprecated features will be marked in the specification and retained for at least one MAJOR version before removal.
+
+### Extension and Profiles
+
+Implementations MAY extend DAL by adding capabilities beyond the minimum conformance requirements. Extensions MUST NOT conflict with normative requirements. Extensions MUST be clearly identified as non-normative additions.
+
+Future versions of DAL may define conformance profiles that specify subsets or extensions of the core specification for particular use cases. DAL v0.1 does not define profiles.
+
+### Conformance Across Versions
+
+A system that conforms to DAL v0.x does not automatically conform to later versions. Conformance must be re-assessed when migrating between versions. After v1.0, systems conforming to v1.x will remain conformant under v1.y where y > x, but not necessarily under v2.0.
+
+### Change Process
+
+DAL v0.x is maintained through open development. Proposed changes are evaluated based on alignment with the specification's scope, compatibility with existing conformance requirements, and clarity of normative language. The change process will be formalized before v1.0.
