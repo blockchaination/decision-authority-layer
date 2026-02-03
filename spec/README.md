@@ -1,5 +1,9 @@
 # Decision Authority Layer (DAL) v0.1 Specification
 
+## Status
+
+DAL v0.1 is frozen. No further changes will be made to this version except errata corrections. New features, concepts, or normative changes will be introduced in subsequent versions.
+
 ## Abstract
 
 In systems where artificial intelligence agents participate in decision-making processes, accountability structures become ambiguous when authority to act is not formally declared. The Decision Authority Layer (DAL) specifies a structural framework for explicitly declaring which agents—human, automated, or hybrid—hold authority to make specific decisions, under what constraints that authority operates, and through what mechanisms such authority can be verified.
