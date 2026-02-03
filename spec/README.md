@@ -126,7 +126,12 @@ A conforming system MUST satisfy the following requirements:
 6.  Decisions executed without valid authority or without corresponding Accountability Records MUST be treated as non-conformant.
 
 ## Normative Rules
-(Uses MUST / SHOULD / MAY language)
+
+This specification uses normative language to indicate requirements for conformance. The key words MUST, MUST NOT, REQUIRED, SHALL, SHALL NOT, SHOULD, SHOULD NOT, RECOMMENDED, MAY, and OPTIONAL are to be interpreted as described in RFC 2119.
+
+Statements containing these terms define conditions that a conforming system is required or permitted to satisfy. Failure to satisfy a MUST or MUST NOT requirement results in non-conformance. SHOULD and SHOULD NOT indicate recommendations that may be deviated from with justification. MAY indicates optional behavior.
+
+Text that does not contain normative keywords is non-normative. Non-normative text provides context, explanation, or rationale. It does not establish requirements and does not affect conformance assessment.
 
 ## Minimal Compliance
 (What an implementation must declare)
