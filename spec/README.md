@@ -44,9 +44,9 @@ DAL does not provide enforcement, automation, or execution mechanisms. It specif
 
 ### Decision Unit
 
-The Decision Unit is the fundamental atomic element of the Decision Authority Layer. It is defined as the smallest indivisible action within a system that produces a state change or an external effect.
+The Decision Unit is the fundamental atomic element of the Decision Authority Layer. It is defined as the smallest indivisible action within a system that produces a change in system state or real-world state.
 
-A Decision Unit is the specific locus where authority is exercised. It is the entity to which authority is assigned and against which accountability is audited.
+A Decision Unit is the specific locus where authority is exercised. It is the unit to which authority is assigned and against which accountability is audited.
 
 A Decision Unit MUST satisfy the following properties:
 
