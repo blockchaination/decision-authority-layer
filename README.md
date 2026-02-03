@@ -8,9 +8,9 @@ DAL addresses the question: *Who or what has the authority to make a decision, u
 
 DAL is a formal specification for:
 
-- **Declaring decision authority** — identifying which agent (human, AI, or hybrid) holds authority for a given decision
-- **Constraining authority** — defining boundaries, prerequisites, and limitations on decision-making power
-- **Auditing authority** — providing mechanisms to verify that decisions were made within authorized scope
+- **Declaring decision authority** : identifying which agent (human, AI, or hybrid) holds authority for a given decision
+- **Constraining authority** : defining boundaries, prerequisites, and limitations on decision-making power
+- **Auditing authority** : providing mechanisms to verify that decisions were made within authorized scope
 
 DAL operates at the structural level, concerned with governance and accountability in systems where AI agents participate in decision-making processes.
 
@@ -18,10 +18,10 @@ DAL operates at the structural level, concerned with governance and accountabili
 
 DAL does not address:
 
-- **Decision quality** — evaluating whether a decision is correct, optimal, or effective
-- **Ethics or values** — determining what decisions should be made from a moral perspective
-- **AI alignment** — ensuring AI systems pursue intended goals or human values
-- **Model behavior** — controlling or improving how AI models generate outputs
+- **Decision quality** : evaluating whether a decision is correct, optimal, or effective
+- **Ethics or values** : determining what decisions should be made from a moral perspective
+- **AI alignment** : ensuring AI systems pursue intended goals or human values
+- **Model behavior** : controlling or improving how AI models generate outputs
 
 DAL is a governance framework, not a quality assurance or alignment mechanism.
 
@@ -35,8 +35,8 @@ The current specification is version 0.1 and is under active development.
 
 DAL is an open standard. Contributions, feedback, and discussion are welcome.
 
-- [Discussions](https://github.com/blockchaination/decision-authority-layer/discussions) — General discussion, proposals, and questions
-- [Issues](https://github.com/blockchaination/decision-authority-layer/issues) — Bug reports and specification improvements
+- [Discussions](https://github.com/blockchaination/decision-authority-layer/discussions) : General discussion, proposals, and questions
+- [Issues](https://github.com/blockchaination/decision-authority-layer/issues) : Bug reports and specification improvements
 
 ## License
 
