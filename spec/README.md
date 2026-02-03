@@ -4,7 +4,7 @@
 
 In systems where artificial intelligence agents participate in decision-making processes, accountability structures become ambiguous when authority to act is not formally declared. The Decision Authority Layer (DAL) specifies a structural framework for explicitly declaring which agents—human, automated, or hybrid—hold authority to make specific decisions, under what constraints that authority operates, and through what mechanisms such authority can be verified.
 
-DAL defines three core components: (1) declaration of decision authority, identifying the agent or agents authorized to execute a decision; (2) constraints on authority, establishing boundaries, prerequisites, and conditions under which authority is valid; and (3) auditability of authority, providing verifiable records that decisions were made by authorized agents within defined limits.
+DAL defines a set of core components: (1) declaration of decision authority, identifying the agent or agents authorized to execute a decision; (2) constraints on authority, establishing boundaries, prerequisites, and conditions under which authority is valid; and (3) auditability of authority, providing verifiable records that decisions were made by authorized agents within defined limits.
 
 DAL operates at the governance layer. It addresses the structural question of who or what is authorized to decide, not whether decisions are correct, ethical, or aligned with specific values. DAL does not evaluate decision quality, encode moral principles, ensure AI alignment, or control model behavior. It exists to make authority explicit, inspectable, and subject to formal verification.
 
@@ -20,7 +20,7 @@ Existing approaches address related but distinct problems. Model alignment focus
 
 None of these methods answer the foundational question: was this agent authorized to make this decision under these conditions? Without explicit authority declarations, accountability structures rely on inference, reconstruction, or custom implementations that vary across systems. Auditors, regulators, and operators cannot determine whether decisions were made within authorized scope without reverse-engineering system internals.
 
-The gap is structural. Authority must be declared before decisions are made, constrained by conditions that limit scope, and subject to verification that actions fall within authorized boundaries. This requires a formal mechanism independent of implementation details. Such a mechanism must support explicit declaration of which agents hold authority, under what conditions authority applies, and how authority can be escalated or revoked.
+The gap is structural. Authority must be declared before decisions are made, constrained by conditions that limit scope, and subject to verification that actions fall within authorized boundaries. This requires a formal mechanism independent of implementation details. Such a mechanism must support explicit declaration of which agents hold authority, under what conditions authority applies, and how authority can be escalated.
 
 DAL addresses this gap by formalizing decision authority as a distinct layer in system design.
 
