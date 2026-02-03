@@ -71,15 +71,15 @@ An Authority Holder MUST satisfy the following properties:
 
 ### Authority Scope
 
-Authority Scope is the bounded set of conditions under which an Authority Holder may exercise authority over Decision Units. Scope constrains authority by limits such as context, conditions, or parameters.
+Authority Scope is the bounded set of conditions under which an Authority Holder may exercise authority over Decision Units. Scope constrains authority by defining the conditions that must be satisfied for authority to apply.
 
 Authority exercised outside declared scope is unauthorized. Scope must be explicit and inspectable. It applies prospectively, establishing validity before a decision is executed.
 
 Authority Scope MUST satisfy the following properties:
 
-1.  **Explicitness**: Limits of authority must be clearly declared.
-2.  **Constraint**: It must define the specific boundaries of valid action.
-3.  **Prospectivity**: It applies to future actions, not past events.
+1.  **Explicitness**: Boundaries of authority must be declared in a form that permits inspection.
+2.  **Constraint**: It must specify the conditions under which authority is valid.
+3.  **Prospectivity**: It governs future actions, not past events.
 
 ## Normative Rules
 (Uses MUST / SHOULD / MAY language)
