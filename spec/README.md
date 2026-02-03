@@ -108,6 +108,23 @@ An Accountability Record MUST satisfy the following properties:
 4.  **Inspectability**: It must be accessible for review and audit.
 5.  **Timeliness**: It must be generated at or immediately following execution.
 
+## Conformance Requirements
+
+### Conformance Model
+
+A system either conforms to this specification or does not conform. Partial adoption or informal alignment does not constitute conformance. Conformance is assessed at the system boundary.
+
+### Minimum Conformance Requirements
+
+A conforming system MUST satisfy the following requirements:
+
+1.  All Decision Units MUST be explicitly identifiable within the system.
+2.  Each Decision Unit MUST have at least one Authority Holder assigned.
+3.  Authority Scope MUST be declared for each Authority Holder.
+4.  Escalation Paths MUST be declared where authority transfer is permitted.
+5.  An Accountability Record MUST be generated for each executed Decision Unit.
+6.  Decisions executed without valid authority or without corresponding Accountability Records MUST be treated as non-conformant.
+
 ## Normative Rules
 (Uses MUST / SHOULD / MAY language)
 
