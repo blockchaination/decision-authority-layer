@@ -94,6 +94,20 @@ An Escalation Path MUST satisfy the following properties:
 3.  **Constraint Preservation**: It must not permit authority to be exercised outside declared scope.
 4.  **Determinacy**: Absence of an applicable path must result in a defined non-action state.
 
+### Accountability Record
+
+An Accountability Record is a durable record that captures exercised authority over a Decision Unit. It links the Decision Unit, the Authority Holder, the Authority Scope under which authority was exercised, and the Escalation Path if applicable.
+
+Records are generated at execution time or immediately after. Records must be inspectable. Absence of an Accountability Record invalidates the decision for audit purposes.
+
+An Accountability Record MUST satisfy the following properties:
+
+1.  **Durability**: It must persist in a form that survives the execution context.
+2.  **Completeness**: It must reference the Decision Unit, Authority Holder, and applicable Authority Scope.
+3.  **Traceability**: It must include the Escalation Path if escalation occurred.
+4.  **Inspectability**: It must be accessible for review and audit.
+5.  **Timeliness**: It must be generated at or immediately following execution.
+
 ## Normative Rules
 (Uses MUST / SHOULD / MAY language)
 
