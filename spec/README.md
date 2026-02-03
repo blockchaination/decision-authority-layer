@@ -257,3 +257,9 @@ A system that conforms to DAL v0.x does not automatically conform to later versi
 ### Change Process
 
 DAL v0.x is maintained through open development. Proposed changes are evaluated based on alignment with the specification's scope, compatibility with existing conformance requirements, and clarity of normative language. The change process will be formalized before v1.0.
+
+## Citation
+
+When referencing this specification, use the following format:
+
+Decision Authority Layer (DAL) Specification, Version 0.1, 2026. Available at: https://blockchaination.github.io/decision-authority-layer/
