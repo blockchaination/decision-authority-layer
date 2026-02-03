@@ -55,6 +55,20 @@ A Decision Unit MUST satisfy the following properties:
 3.  **Identifiability**: It must be uniquely addressable and distinguishable from other units.
 4.  **Accountability**: It serves as the anchor point for authority assignment and audit records.
 
+### Authority Holder
+
+An Authority Holder is an identifiable actor that is permitted to exercise authority over one or more Decision Units. An Authority Holder may be a human, an organization, or a system component.
+
+Authority Holders do not make decisions by default. They hold permission to decide. Authority must be explicitly assigned. It is never implied by role, function, or proximity to a Decision Unit.
+
+Authority Holders are accountable for decisions executed under their declared authority.
+
+An Authority Holder MUST satisfy the following properties:
+
+1.  **Identifiability**: It must be uniquely addressable within the system.
+2.  **Explicit Assignment**: Authority over Decision Units must be declared, not inferred.
+3.  **Accountability**: It bears responsibility for decisions made under its authority.
+
 ## Normative Rules
 (Uses MUST / SHOULD / MAY language)
 
