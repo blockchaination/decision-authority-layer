@@ -81,6 +81,21 @@ Authority Scope MUST satisfy the following properties:
 2.  **Constraint**: It must specify the conditions under which authority is valid.
 3.  **Prospectivity**: It governs future actions, not past events.
 
+### Escalation Path
+
+An Escalation Path is the declared sequence through which authority may be transferred when an Authority Holder lacks sufficient scope to act on a Decision Unit. Escalation preserves continuity of authority by defining how decisions proceed when initial authority is insufficient.
+
+Escalation does not bypass authority constraints. Authority transferred through escalation remains subject to the scope constraints of the receiving Authority Holder. Escalation paths must be explicit and inspectable.
+
+Absence of an applicable escalation path results in non-action. A Decision Unit for which no Authority Holder possesses sufficient scope and no escalation path is declared cannot be executed.
+
+An Escalation Path MUST satisfy the following properties:
+
+1.  **Explicitness**: The sequence of authority transfer must be declared in a form that permits inspection.
+2.  **Continuity**: It must preserve an unbroken chain of authority from origin to resolution.
+3.  **Constraint Preservation**: It must not permit authority to be exercised outside declared scope.
+4.  **Determinacy**: Absence of an applicable path must result in a defined non-action state.
+
 ## Normative Rules
 (Uses MUST / SHOULD / MAY language)
 
