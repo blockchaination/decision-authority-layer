@@ -31,6 +31,14 @@ The current specification is version 0.1 and is under active development.
 
 - [Specification (v0.1)](./spec/)
 
+## Canonical Specification
+
+The authoritative version of the DAL specification is published at:
+
+https://blockchaination.github.io/decision-authority-layer/
+
+Mirrors, forks, or reproductions hosted elsewhere are non-authoritative. In case of discrepancy, the GitHub Pages publication governs.
+
 ## Participate
 
 DAL is an open standard. Contributions, feedback, and discussion are welcome.
