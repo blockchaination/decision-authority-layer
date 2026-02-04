@@ -3,39 +3,31 @@
 
 decision_units:
   - id: "DU-001"
-    description: "Primary decision-making context or functional outcome."
-    assigned_authority:
-      holder_id: "AH-001"
-      scope_definition:
-        allowed_actions:
-          - "action_identifier_1"
-          - "action_identifier_2"
-        constraints:
-          - "resource_limit_value"
-          - "operational_boundary_condition"
-    escalation_protocol:
-      path_id: "EP-001"
-      triggers:
-        - "scope_violation"
-        - "confidence_threshold_breach"
-    accountability:
-      record_id: "AR-001"
+    authority_holder_id: "AH-001"
+    authority_scope_id: "AS-001"
+    escalation_path_id: "EP-001"
+    accountability_record_id: "AR-001"
 
 authority_holders:
   - id: "AH-001"
-    type: "system_agent" # or human_operator
-    description: "Entity designated to execute decisions within the defined scope."
+    type: "system_agent"
+    description: "Primary automated decision agent."
+  - id: "AH-002"
+    type: "human_operator"
+    description: "Senior human supervisor."
+
+authority_scopes:
+  - id: "AS-001"
+    description: "Scope defined by policy document POLICY-2024-A."
 
 escalation_paths:
   - id: "EP-001"
-    target_authority_id: "AH-002"
-    description: "Route for decisions exceeding the assigned authority scope."
+    target_authority_holder_id: "AH-002"
 
 accountability_records:
   - id: "AR-001"
-    description: "Log or artifact ensuring transparency of the decision event."
-    fields:
-      - "timestamp"
-      - "decision_input"
-      - "decision_output"
-      - "acting_authority_id"
+    references:
+      decision_unit_id: "DU-001"
+      authority_holder_id: "AH-001"
+      authority_scope_id: "AS-001"
+      escalation_path_id: "EP-001"
